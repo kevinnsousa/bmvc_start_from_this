@@ -1,0 +1,111 @@
+:root {
+    --bg-color: #FDFBF7;        /* Creme claro */
+    --card-bg: #FFFFFF;         /* Branco puro */
+    --text-primary: #4A3E3D;    /* Marrom escuro */
+    --text-secondary: #8C7A6B;  /* Marrom médio pastel */
+    --accent-color: #D7C4B7;    /* Bege / Marrom pastel claro */
+    --accent-hover: #C5B0A3;    /* Tom pastel ligeiramente mais escuro */
+    --border-color: #EFE8E1;    /* Linha de divisão suave */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(74, 62, 61, 0.05);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.03);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 12px 0 8px;
+    color: var(--text-primary);
+}
+
+header p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.badge {
+    background-color: var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.actions {
+    margin-top: 28px;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.status-box {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    border: 1px dashed var(--accent-color);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
